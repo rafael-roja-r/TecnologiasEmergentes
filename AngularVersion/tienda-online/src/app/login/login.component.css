@@ -1,0 +1,25 @@
+/*Centrar el login vertical y horizontalmente*/
+.div-html{
+  display: table;
+  margin: auto;
+  height: 100vh;
+}
+
+.div-body{
+  width: 100vw;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+}
+
+input.ng-touched.ng-invalid{
+    border: 1px solid red;
+}
+
+.error{
+    color: red;
+}
+
+.image-login{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/login-fondo.jpg');
+}

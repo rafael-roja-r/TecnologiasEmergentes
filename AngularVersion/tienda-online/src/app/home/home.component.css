@@ -1,0 +1,16 @@
+.body{
+  background-color: white;
+  padding: 2% !important;
+  margin-top: 2%;
+  border-radius: 1%;
+  height: calc(100vh - 75px) !important;
+}
+
+.image-main{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/img/main-fondo.jpg');
+}
+
+.div-html{
+  margin: auto;
+  height: 100vh;
+}

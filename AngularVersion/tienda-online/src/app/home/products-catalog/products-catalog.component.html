@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-sm-9">
+    <h2>Catalogo de productos</h2>
+  </div>
+  <div class="col-sm-3">
+    <p>Que estas buscando?</p>
+    <input type="search" class="searchbox-input" placeholder="Buscar producto" [(ngModel)]="searchText" />
+  </div>
+</div>
+<div class="row card-group catalogListDiv">
+  <div class="col-lg-3 col-md-6" *ngFor="let product of products | searchFilter : 'nombre' : searchText">
+    <div class="thumbnail">
+      <img class="cardImg" [src]="product.img" alt="Card image cap">
+      <div class="caption text-left">
+        <span id="productId" class="hidden">{{product.nombre}}</span>
+        <h3 class="card-title">{{product.nombre}}</h3>
+        <p><strong>Precio:</strong>$ {{product.precio}}</p>
+        <p><strong>Unidades disponibles:</strong><span id="unidadDisponible-{{product.index}}">{{product.stock}}</span></p>
+        <div class="text-right">
+          <a href="#" class="btn btn-primary showMoreButton" [routerLink]="['../product', product.index ]">Ver mas</a>
+          <a class="btn btn-warning" (click)="addProductToShoppingCart(product, inputNumber.value)">Anadir</a>
+          <input class="number text-center quantityInput" type="number" name="" value="1" #inputNumber>
+        </div>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+.cardImg{
+  object-fit: scaleDown !important;
+  width: 242px !important;
+  height: 200px !important;
+}
+
+.quantityInput{
+  width:40px;
+  margin-left:2%
+}
+
+.showMoreButton{
+  float:left
+}
+
+.catalogListDiv{
+  overflow-y: auto;
+  height: 75vh
+}
+
+body{
+  background-color: white;
+  padding: 2%
+}

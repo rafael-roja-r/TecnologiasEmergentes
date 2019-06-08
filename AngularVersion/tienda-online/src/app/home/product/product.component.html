@@ -1,0 +1,19 @@
+<div class="card-producto" *ngIf="product" class="">
+
+  <div class="row">
+    <h2>{{product.nombre}}</h2>
+  </div>
+
+  <div class="row">
+    <span id="productId" class="hidden">{{product.nombre}}</span>
+    <div class="col-sm-6 col-image">
+      <img class="productImg" [src]="product.img" alt="Card image cap">
+      <a class="btn btn-default" routerLink="/home/products-catalog">Atras</a>
+    </div>
+    <div class="col-sm-6">
+      <p class=""><strong>Precio:</strong>$ {{product.precio}}</p>
+      <p class=""><strong>Unidades disponibles:</strong>{{product.stock}}</p>
+    </div>
+  </div>
+
+</div>
