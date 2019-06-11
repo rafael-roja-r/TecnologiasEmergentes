@@ -1,11 +1,11 @@
 import React from 'react';
-import { login } from '../helpers/auth'
+import { login } from '../assistant/assistant'
 
-const divHtml  = {
+const divbgrHtml  = {
   display: 'table',
   margin: 'auto',
   height: '100vh',
-  backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\'/assets/img/login-fondo.jpg\')'
+  backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(\'/assets/img/login-fondo.jpg\')'
 }
 
 const divBody  = {
@@ -38,7 +38,6 @@ class LoginComponent extends React.Component{
 
     handleSubmit(event) {
       event.preventDefault();
-      //alert('A name was submitted: ' + this.state.value);
       login(this.state.value, this.state.passwordVal)
         .then(()=>{
           this.props.history.push('/home')
@@ -49,7 +48,7 @@ class LoginComponent extends React.Component{
     }
 
     render(){
-      return (<div style={divHtml}>
+      return (<div style={divbgrHtml}>
         <div style={divBody}>
           <div className="col-sm-6 col-sm-offset-3">
             <h4 className="text-center">Inicia Sesion</h4>
@@ -68,7 +67,7 @@ class LoginComponent extends React.Component{
                         default:      return "";
                       }
                     })()}</label>
-              <button type="submit" className="btn btn-success center-block">Ingresar</button>
+              <button type="submit" className="btn btn-info  center-block"> Ingresar </button>
             </form>
           </div>
         </div>

@@ -9,6 +9,7 @@ const productImage = {
 const body = {
   backgroundColor: 'white',
   padding: '2%'
+
 }
 
 
@@ -22,8 +23,7 @@ class ProductShow extends React.Component{
     }
 
     componentWillMount(){
-      //console.log(this.props.showProductId);
-      let productIndex = this.props.showProductId;//this.props.match.params.index;
+      let productIndex = this.props.showProductId;
       request.get('https://tienda-online-e05ec.firebaseio.com/productos/'+productIndex+'.json')
               .end((err, res)=>{
                 if(err || !res.ok){
@@ -45,11 +45,15 @@ class ProductShow extends React.Component{
           </div>
           <div className="col-sm-12">
             <div className="col-sm-8 thumbnail">
-              <img src={this.state.producto.img} alt={this.state.producto.nombre} style={productImage}/>
+              <img src={this.state.producto.img}
+              alt={this.state.producto.nombre}
+              style={productImage}/>
             </div>
             <div className="col-sm-4">
-              <p><strong>Precio:</strong> $ {this.state.producto.precio}</p>
-              <p><strong>Unidades Disponibles:</strong> {this.state.producto.stock}</p>
+              <p><strong>Precio:</strong>
+               $ {this.state.producto.precio}</p>
+              <p><strong>Unidades Disponibles:</strong>
+               {this.state.producto.stock}</p>
             </div>
             <div className="col-sm-12">
               <p>

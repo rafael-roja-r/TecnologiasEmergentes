@@ -39,15 +39,15 @@ class ProductList extends React.Component{
           <div className="row text-center">
             <div className="col-sm-12">
               <div className="col-sm-12 col-md-6 text-left">
-                <h1>Catálogo de Productos</h1>
+                <h1>Productos</h1>
               </div>
               <div className="col-sm-12 col-md-push-3 col-md-3 text-right">
                 <div className="col-sm-12 text-left">
-                  <h5>Que estas buscando?</h5>
+                  <h5>Listo para buscar</h5>
                 </div>
                 <div className="col-sm-12">
                   <div className="form-group">
-                    <input type="text" className="form-control" placeholder="Buscar Producto" onChange={this.props.handleChange.bind(this)}/>
+                    <input type="text" className="form-control" placeholder="Buscar" onChange={this.props.handleChange.bind(this)}/>
                   </div>
                 </div>
               </div>
@@ -63,8 +63,8 @@ class ProductList extends React.Component{
                     <p><strong>Precio:</strong> $ {producto.precio}</p>
                     <p><strong>Unidades Disponibles:</strong> {producto.stock}</p>
                     <div className="text-right">
-                      <a className="btn btn-primary" role="button" onClick={this.props.showProduct.bind(this, producto.index)} style={showMoreButton}>Ver Mas</a>
-                      <a className="btn btn-warning" role="button" onClick={this.props.addProduct.bind(this, producto.index)}>Añadir</a>
+                      <a className="btn btn-info" role="button" onClick={this.props.showProduct.bind(this, producto.index)} style={showMoreButton}>Ver Mas</a>
+                      <a className="btn btn-success" role="button" onClick={this.props.addProduct.bind(this, producto.index)}>Añadir</a>
                       <input id={"producto"+producto.index} style={quantityInput} type="number" defaultValue="1"/>
                     </div>
                   </div>

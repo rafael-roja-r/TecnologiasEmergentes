@@ -1,7 +1,7 @@
 import React from 'react';
-import ProductList from './productList.jsx';
-import ShoppingCart from './shoppingCart.jsx';
 import ProductShow from './productShow.jsx';
+import ShoppingCart from './shoppingCart.jsx';
+import ProductList from './productList.jsx';
 
 
 class BodyComponent extends React.Component{
@@ -12,7 +12,9 @@ class BodyComponent extends React.Component{
     render(){
       const page = this.props.page;
       if (page=='list') {
-        return <ProductList showProduct={this.props.showProduct} addProduct={this.props.addProduct} productosFiltrados={this.props.productosFiltrados} handleChange={this.props.handleChange}/>;
+        return <ProductList showProduct={this.props.showProduct}
+        addProduct={this.props.addProduct} productosFiltrados=
+        {this.props.productosFiltrados} handleChange={this.props.handleChange}/>;
       }else if(page=='shoppingCart'){
         return <ShoppingCart
                   shoppingCart={this.props.shoppingCart}

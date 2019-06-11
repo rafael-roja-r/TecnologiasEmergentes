@@ -3,9 +3,8 @@ import * as request from 'superagent';
 import { NavItem, Glyphicon } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import ProductList from './productList.jsx';
-// import ProductShow from './productShow.jsx';
-import ShoppingCart from './shoppingCart.jsx';
 import BodyComponent from './bodyComponent.jsx';
+import ShoppingCart from './shoppingCart.jsx';
 import ReactDOM from 'react-dom';
 
 const badgeColor = {
@@ -13,7 +12,7 @@ const badgeColor = {
 }
 
 const imageMain = {
-  backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(\'/assets/img/main-fondo.jpg\')',
+  backgroundImage: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(\'/assets/img/main-fondo.jpg\')',
   height: '100vh'
 }
 
@@ -99,7 +98,6 @@ class HeaderComponent extends React.Component{
       }
       var shoppingCart = this.state.shoppingCart;
       shoppingCart.push(shoppingCartItem);
-      // this.setState({shoppingCart:shoppingCart});
       document.getElementById("shoppingCartBadge").innerHTML = shoppingCart.length;
       let shoppingCartTotal = this.state.shoppingCartTotal;
       shoppingCartTotal = shoppingCartTotal + shoppingCartItem.subTotal;
@@ -134,7 +132,7 @@ class HeaderComponent extends React.Component{
                   <div className="container-fluid">
                     <div className="navbar-header">
                       <a className="navbar-brand" href="#/home">
-                        La Bodega
+                        shop Express
                       </a>
                     </div>
                     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
