@@ -1,7 +1,28 @@
-* Como Backend y gestor de BD se utilizÛ Firebase.
-    * AsÌ tambiÈn para la autenticaciÛn de usuario (Login) se utilizÛ Firebase.
-    * Para validar el login las credenciales validas son:
-          # Email: usuario.tienda@mail.com
-          # Password: 123456
-    * Para la versiÛn con Angular antes de ejecutar el comando "ng serve" del CLI se debe ejecutar el comando "npm install" para instalar la dependencias necesarias (que no fueron incluidas en la carpeta del proyecto a modo de minimizar el peso del archivo .zip).
-    * Para la versiÛn con React las dependencias est·n incluidas en la carpeta del proyecto, para correr la aplicaciÛn se utiliza el comando "npm start".
+# Proyecto Tienda Virtual
+
+Este proyecto es una aplicaci√≥n web desarrollada con versiones en **Angular** y **React**, utilizando **Firebase** como backend y gestor de base de datos. A continuaci√≥n, se describen las especificaciones t√©cnicas y pasos para ejecutar cada versi√≥n.
+
+---
+
+## **Tecnolog√≠as Utilizadas**
+- **Backend y Base de Datos:** [Firebase](https://firebase.google.com)
+  - Autenticaci√≥n de usuarios con Firebase Authentication.
+  - Gesti√≥n de datos mediante Firebase Realtime Database o Firestore.
+
+---
+
+## **Autenticaci√≥n de Usuarios**
+Para iniciar sesi√≥n en la aplicaci√≥n, utiliza las siguientes credenciales v√°lidas:
+
+- **Email:** `usuario.tienda@mail.com`  
+- **Password:** `123456`
+
+---
+
+## **Versi√≥n con Angular**
+
+1. **Instalaci√≥n de dependencias:**  
+   Antes de ejecutar la aplicaci√≥n, aseg√∫rate de instalar las dependencias necesarias.  
+   Ejecuta el siguiente comando en la ra√≠z del proyecto:
+   ```bash
+   npm install
