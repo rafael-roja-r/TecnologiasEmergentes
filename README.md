@@ -1,20 +1,94 @@
-Aplicación de Tienda Online con React
-La aplicación desarrollada en React está diseñada para ofrecer una experiencia de compra rápida, interactiva y altamente personalizable. Algunas de sus características incluyen:
+# Tiendas Online - React y Angular
 
-Interfaz de Usuario Moderna: Utiliza componentes reutilizables y estilos modernos para garantizar un diseño atractivo y consistente.
-Gestión de Productos: Permite a los administradores agregar, actualizar y eliminar productos fácilmente desde un panel de control.
-Carrito de Compras Dinámico: El carrito de compras se actualiza en tiempo real, proporcionando una experiencia interactiva para los usuarios.
-Autenticación de Usuarios: Implementa inicio de sesión y registro de usuarios con validación de datos.
-Integración de Métodos de Pago: Soporte para pagos seguros mediante plataformas como PayPal o Stripe.
-Optimización para Móviles: Diseño responsivo que garantiza un uso fluido en cualquier dispositivo.
-State Management: Utiliza Redux para gestionar el estado global, asegurando que las interacciones del usuario sean rápidas y coherentes.
-Aplicación de Tienda Online con Angular
-La aplicación desarrollada con Angular combina robustez y funcionalidad para manejar grandes volúmenes de productos y usuarios. Sus características clave son:
+## Descripción del Proyecto
+Este repositorio contiene dos implementaciones de una tienda en línea, una desarrollada con **React** y otra con **Angular**. Ambas aplicaciones están diseñadas para ofrecer una experiencia de usuario optimizada, segura y moderna, dirigida tanto a clientes como a administradores.
 
-Arquitectura Modular: Aprovecha el poder de los módulos de Angular para organizar y escalar la aplicación fácilmente.
-Rendimiento Optimizado: Usa herramientas como Ahead-of-Time (AOT) Compilation para reducir los tiempos de carga.
-Gestión Avanzada de Inventario: Los administradores pueden rastrear el stock y generar alertas cuando los niveles de inventario son bajos.
-Búsqueda y Filtrado: Incluye un motor de búsqueda avanzada con filtros por categorías, precios y calificaciones.
-Soporte Multilingüe: Compatible con múltiples idiomas para alcanzar un público global.
-Autenticación y Seguridad: Implementa autenticación basada en JWT y protección contra ataques comunes como CSRF.
-Notificaciones en Tiempo Real: Integra WebSockets para enviar notificaciones sobre ofertas y actualizaciones de pedidos.
+---
+
+## Aplicación 1: Tienda Online con React
+
+### Características
+- **Interfaz Moderna:** Componentes reutilizables con estilos atractivos y responsivos.
+- **Carrito de Compras Dinámico:** Actualización en tiempo real de los productos añadidos o eliminados.
+- **Autenticación:** Registro e inicio de sesión de usuarios con validación.
+- **Gestión de Productos:** Panel para añadir, editar o eliminar productos.
+- **Métodos de Pago:** Integración con plataformas como PayPal y Stripe.
+- **State Management:** Uso de Redux para un manejo eficiente del estado.
+
+### Tecnologías Usadas
+- React (CRA o Vite)
+- Redux
+- React Router
+- Axios
+- CSS Modules o Styled Components
+
+### Instalación
+```bash
+# Clonar el repositorio
+$ git clone https://github.com/usuario/tiendas-online.git
+
+# Navegar al directorio de React
+$ cd react-store
+
+# Instalar dependencias
+$ npm install
+
+# Ejecutar la aplicación
+$ npm start
+```
+
+---
+
+## Aplicación 2: Tienda Online con Angular
+
+### Características
+- **Arquitectura Modular:** Organización y escalabilidad mediante módulos.
+- **Gestión Avanzada de Inventario:** Alertas automáticas para stock bajo.
+- **Búsqueda y Filtrado:** Motor de búsqueda avanzado con filtros.
+- **Notificaciones en Tiempo Real:** WebSockets para actualizaciones instantáneas.
+- **Soporte Multilingüe:** Compatible con varios idiomas.
+- **Autenticación Segura:** Basada en JWT y protegida contra CSRF.
+
+### Tecnologías Usadas
+- Angular
+- RxJS
+- Angular Router
+- Bootstrap o Angular Material
+- Firebase o Node.js (Backend opcional)
+
+### Instalación
+```bash
+# Clonar el repositorio
+$ git clone https://github.com/usuario/tiendas-online.git
+
+# Navegar al directorio de Angular
+$ cd angular-store
+
+# Instalar dependencias
+$ npm install
+
+# Ejecutar la aplicación
+$ ng serve
+```
+
+---
+
+## Contribuciones
+Si deseas contribuir a este proyecto:
+1. Haz un fork del repositorio.
+2. Crea una rama con tu funcionalidad: `git checkout -b feature/nueva-funcionalidad`.
+3. Realiza un commit de tus cambios: `git commit -m 'Añadida nueva funcionalidad'`.
+4. Sube los cambios: `git push origin feature/nueva-funcionalidad`.
+5. Abre un Pull Request.
+
+---
+
+## Licencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+---
+
+## Contacto
+Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto:
+- **Nombre:** Jose Rafael Rojas Reyna
+- **Correo:** ejemplo@correo.com
